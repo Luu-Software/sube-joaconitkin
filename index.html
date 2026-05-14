@@ -21,6 +21,7 @@
       <select class="montserrat-regular" id="registrada">
         <option value="si">Sí</option>
         <option value="no">No</option>
+        <option value="tarifa">Tarifa</option>
       </select>
       <label for="distancia">Km a recorrer</label>
       <input
@@ -30,6 +31,12 @@
         id="distancia"
         placeholder="Ingrese los km"
       />
+      <label for="tipo de colectivo">¿Qué tipo de colectivo deseas?</label>
+      <select name="montserrat-regular" id="tipo bondi">
+        <option value="nacional">Nacional</option>
+        <option value="caba">Caba</option>
+        <option value="provincia">provincia</option>
+      </select>
       <div class="boton montserrat-regular" id="boton">Calcular tarifa</div>
     </form>
     <p class="resultado montserrat-regular" id="tarifa">(Tarifa)</p>

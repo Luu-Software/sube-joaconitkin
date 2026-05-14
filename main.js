@@ -16,33 +16,11 @@ boton.addEventListener("click", () => {
 let km = Number(distancia.value);
 let tipo = registrada.value;
 let precio = 0;
-if (tipo === "si") {
-  if (km >= 0 && km <= 3) {
-    precio = 715.24;
-  } else if (km > 3 && km <= 6) {
-    precio = 794.74;
-  } else if (km > 6 && km <= 12) {
-    precio = 855.97;
-  } else if (km > 12 && km <= 27) {
-    precio = 917.24;
-  } else {
-    tarifa.textContent = "Distancia no válida";
-    return;
+let bondi = tipo-bondi.value;
+
+if (tipo-bondi === nacional){
+  if ( tipo === "si"){
+    if (km => 0 && <= 3)
   }
 }
-else if (tipo === "no") {
-  if (km >= 0 && km <= 3) {
-    precio = 1137.23;
-  } else if (km > 3 && km <= 6) {
-    precio = 1263.64;
-  } else if (km > 6 && km <= 12) {
-    precio = 1360.99;
-  } else if (km > 12 && km <= 27) {
-    precio = 1458.41;
-  } else {
-    tarifa.textContent = "Distancia no válida";
-    return;
-  }
-}
-tarifa.textContent = `$ ${precio.toFixed(2)}`;
 });
