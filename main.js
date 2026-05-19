@@ -136,6 +136,9 @@ boton.addEventListener("click", () => {
   
       else if (km > 12 && km <= 27) {
         precio = 1536.91;
+      }else{
+        tarifa.textContent = "Tarifa no válida";
+        return;
       }
   
     }
@@ -156,6 +159,10 @@ boton.addEventListener("click", () => {
   
       else if (km > 12 && km <= 27) {
         precio = 434.97;
+      }
+      else{
+        tarifa.textContent = "Tarifa no válida";
+        return;
       }
   
     }
